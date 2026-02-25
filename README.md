@@ -52,6 +52,10 @@ docker-compose up -d
 - 添加到 VS Code [![Install MCP Server](https://img.shields.io/badge/VS_Code-+?label=Add+MCP+Server&color=0098FF)](https://insiders.vscode.dev/redirect?url=vscode:mcp/install%3F%7B%22name%22%3A%22vods%22%2C%22command%22%3A%22uvx%22%2C%22args%22%3A%5B%22mcp-vods%22%5D%7D)
 - 添加到 Cherry Studio [![Install MCP Server](https://img.shields.io/badge/Cherry_Studio-+?label=Add+MCP+Server&color=FF5F5F)](https://gitee.com/link?target=cherrystudio%3A%2F%2Fmcp%2Finstall%3Fservers%3DeyJtY3BTZXJ2ZXJzIjp7InZvZHMiOnsiY29tbWFuZCI6InV2eCIsImFyZ3MiOlsibWNwLXZvZHMiXX19fQ%3D%3D)
 
+### 🎓 Agent Skills
+```shell
+npx skills add aahl/skills --skill mcp-vods
+```
 
 ### ⚙️ 环境变量
 
