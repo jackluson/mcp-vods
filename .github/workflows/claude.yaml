@@ -20,6 +20,11 @@ jobs:
     env:
       CLAUDE_PROMPT: ${{ inputs.prompt || secrets.CLAUDE_PROMPT || vars.CLAUDE_PROMPT }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # fetch-depth: 0 表示拉取所有历史记录，这对 AI 分析代码很重要
+          fetch-depth: 0 
       - name: Install uv
         if: ${{ env.CLAUDE_PROMPT }}
         uses: astral-sh/setup-uv@v6
